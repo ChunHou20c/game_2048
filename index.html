@@ -4,19 +4,23 @@
 <head>
   <meta charset="utf-8">
   <title>2048 rust</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <script type="module">
   import init, {hello} from './pkg/game_2048.js'
 
-  async function run() {
-
-    await init();
-    const msg = hello();
-    console.log(msg);
-  }
-
-  run();
-
+  await init();
+  const msg = hello();
+  console.log(msg);
 </script>
+
+<body>
+  <h1>2048</h1>
+  <hr>
+  <h2>Score:<span id=score>0</span></h2>
+  <div id="board">
+
+  </div>
+</body>
 
 </html>
