@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>2048 rust</title>
+</head>
+<script type="module">
+  import init, {hello} from './pkg/game_2048.js'
+
+  async function run() {
+
+    await init();
+    const msg = hello();
+    console.log(msg);
+  }
+
+  run();
+
+</script>
+
+</html>
